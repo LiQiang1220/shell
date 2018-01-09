@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+
+body,button,input,select,textarea {
+	font: 12px/1.5 Arial, Helvetica, sans-serif;
+}
+#chooseCountry .select-ico
+{
+	right:16px;
+}
+.input-container .input-left
+{
+	width:90px;
+}
+.input-container .input-left
+{
+
+	text-align:justify;
+	text-align-last: justify;
+    text-justify:inter-ideograph;
+
+}

@@ -1,0 +1,212 @@
+﻿@charset "utf-8";
+/*原common.css body相关css*/
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{margin: 0;padding: 0;line-height:1;}
+
+img{border:0;-ms-interpolation-mode:bicubic;}
+table{border-collapse: collapse;border-spacing: 0;}
+button,select{text-transform: none;}
+button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}
+textarea {overflow: auto;vertical-align: top; resize:vertical;}
+ol,ul{list-style:none;}
+em{font-weight:normal;font-style:normal;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+h1,h2,h3,h4       ,h5,h6,b{font-size:100%;font-weight:normal;}
+td{word-break:break-all;word-wrap:break-word;word-break: normal;}
+html{font-size: 100%;-webkit-text-size-adjust:100%;overflow-y:scroll;}
+body{min-width: 1168px;font-size:12px;font-family:Microsoft Yahei,STHeiti,Simsun,STSong; color:#333; background-color:#f7f7f7;}
+
+.g-clearfix{zoom: 1;}
+.hiden{display: none;}
+.center {text-align: center;}
+.login-right {width: 380px;float: right;background-color: #FFFFFF;}
+.login-div {margin-top: 0px;background-color: #FFF;width: 380px;min-height: 485px;margin-left: auto;margin-right: auto;height: 530px;position: relative;}
+
+.wp{margin: 0 auto;	width: 1000px;}
+.ft {margin: 20px auto;text-align: center;font-size: 12px;color: #999;}
+.ft p {line-height: 24px;}
+.ft p a {font-size: 14px;color: #999;}
+.rule {/* text-decoration: underline; *//* margin-right: 12px; */padding: 0 10px;}
+.foot_em {font-size: 16px;}
+.ifaq {padding: 10px;background-position: -100px 3px;}
+/*********************主题样式*************************/
+.button-login{width: 100%;border-radius: 0px;line-height: 44px;height: 44px;font-weight: bold;font-size: 14px;background-image: none;cursor: pointer;border-radius: 26px;text-align: center;margin-top: 0px;}
+
+.themeName-blue .login-area .h span:hover,.themeName-blue .login-area .h .actived,.themeName-blue .login-div .h span:hover,.themeName-blue .login-div .h .actived{color:#1aa8d5;}
+.themeName-blue .button-login {background-color: #1aa8d5;border-width: 0 0 2px 0;border-style: solid;border-color: #1aa8d5;color: #fff;}
+.themeName-blue .button-login:hover{background-color:#1aa8d5;text-decoration: none;color: #fff;border-color:#1aa8d5;}
+
+.themeName-red .login-area .h span:hover,.themeName-red .login-area .h .actived,.themeName-red .login-div .h span:hover,.themeName-red .login-div .h .actived{color:#B40707;}
+.themeName-red .button-login {background-color: #B40707;border-width: 0 0 2px 0;border-style: solid;border-color: #B40707;color: #fff;}
+.themeName-red .button-login:hover{background-color: #C70000;text-decoration: none;color: #fff;border-color:#C70000;}
+
+
+.themeName-huawei .login-area .h span:hover,.themeName-huawei .login-area .h .actived,.themeName-huawei .login-div .h span:hover,.themeName-huawei .login-div .h .actived{color:#BE0000;}
+.themeName-huawei .button-login {background-color: #FFFFFF;border-width: 1px;border-style: solid;border-color: #CCCCCC;color: #000;}
+.themeName-huawei .button-login:hover{background-color: #BE0000;text-decoration: none;color: #fff;border-color: #BE0000;}
+
+/*背景样式*/
+.login_bg{background-color: #081638;}
+
+/*第三方登录*/
+.thirdLintTitle{position: relative;width: 328px;margin-bottom: 10px;}
+.thirdLintTitle .line-left{background-image: url(../images/thirdline.png);background-repeat: no-repeat;height: 1px;position: absolute;width: 94px;background-size: cover;}
+.thirdLintTitle .line-right{background-image: url(../images/thirdline-reverse.png);background-repeat: no-repeat;height: 1px;position: absolute;width: 94px;background-size: cover;}
+.thirdLintTitle .third-tips{color: #cccccc;vertical-align: middle;text-align: center;max-width: 190px;display: inline-block;position: relative;z-index: 1;background: #ffffff;padding: 0 10px;line-height: 1.5;}
+.thirdLoginDiv{width: 328px;text-align: center;margin-bottom: 10px;}
+.thirdLoginDiv span{padding: 0px 10px;text-align: center;display: inline-block;}
+.qqLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -72px -9px;}
+.qqLogin_bigIco a:hover{background-position: -72px -55px;}
+.alipayLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -132px -9px;}
+.alipayLogin_bigIco a:hover{background-position: -132px -55px;}
+.weixinLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -12px -9px;}
+.weixinLogin_bigIco a:hover{background-position: -12px -55px;}
+.weixinOfficialLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -12px -9px;}
+.weixinOfficialLogin_bigIco a:hover{background-position: -12px -55px;}
+.vkLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -72px -153px;}
+.vkLogin_bigIco a:hover{background-position: -72px -107px;}
+.googleLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -252px -9px;}
+.googleLogin_bigIco a:hover{background-position: -252px -55px;}
+.faceBookLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -188px -9px;}
+.faceBookLogin_bigIco a:hover{background-position: -190px -55px;}
+.twitterLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -133px -153px;}
+.twitterLogin_bigIco a:hover{background-position: -133px -107px;}
+.weiboLogin_bigIco a{background-image: url(../images/third_login.png);background-repeat: no-repeat;width: 42px;height: 42px;padding: 0px;display: inline-block;margin: 0;float: none;background-position: -12px -153px;}
+.weiboLogin_bigIco a:hover{background-position: -12px -107px;}
+/*页面其他样式*/
+.login-area-box{margin-top: 30px;margin-bottom: 30px;height: 530px;position: relative}
+.user-input-tr{border-bottom: 1px solid #cccccc;height: 46px}
+
+.form-edit-area .mt-links .mt-links-center{text-align: center;display: flow-root;}
+.form-edit-area .smsCodeLoad {color: #009ae7;cursor: pointer;}
+
+.ft p{display: inline-block}
+.ft p:first-child{display: block;}
+
+.login {background-color: #EBEBEB;}
+/*loginAuth.html ---header样式*/
+.login-foot {border-top: 1px solid #d7d7d7;margin: 50px 150px;}
+.login-foot .ifaq {background-position: -300px 3px;}
+
+.g {width: 1130px;margin: 0 auto;zoom: 1;position: relative;}
+.g:after {content: "\0020";display: block;height: 0;clear: both;visibility: hidden;overflow: hidden;}
+.login-area .h,.login-div .h,.login-area .sms-h{width: 100%;margin: 24px auto;text-align: center;}
+.login-div .headAdapt{padding-top: 24px;margin-top: 26px;}
+.loginTitle {font-family: "Microsoft YaHei" ! important;}
+.login-area .h span,.login-div .h span {font-size: 20px;color: #333333;font-weight: 500;cursor: pointer;width: 169px;display: inline-block;text-align: center;vertical-align: middle;padding: 0 10px;}
+.login-div .bgHeader{border-bottom: 1px solid rgb(205, 205, 205);padding-bottom: 24px;margin-bottom: 10px!important;}
+.login-div .form-edit-area table,.login-area .form-edit-area table{width: 328px;}
+.sms-b,.b-account{width: 328px;margin: 0 auto;}
+.form-edit-area th, .form-edit-area td{padding:0;}
+.form-edit-area .text, .form-edit-area .verify {border: none;color: #333333;font-size: 14px;height: 46px;line-height: 46px;border-radius: 0px;}
+.form-edit-area .text {width: 100%;}
+td.verify-td {margin-top: -5px;padding: 0;}
+.form-edit-area td.mt-checkbox {padding: 16px 0;position: relative;}
+/*.form-edit-area td.mt-checkbox .checkbox{display: none;}*/
+.button-login {font-family: "Microsoft YaHei" ! important;}
+.form-edit-area td.mt-links {padding: 16px 0;text-align: center;line-height: 1.3}
+.form-edit-area td.mt-links .mt-links-float{text-align: center;}
+.form-edit-area a.vam {font-family: Tahoma;}
+
+.b-qrCode .qrCode-main{height: 318px;position: relative;}
+.b-qrCode .qrCode-main .qrCode-img{display: inline-block;}
+.b-qrCode .qrCode-desc{margin-bottom: 24px;padding: 0 10px;}
+.b-qrCode .qrCode-desc a{color: #009ae7;}
+.b-qrCode .qrCode-desc a:hover{color: #0088cc;}
+.b-qrCode .qrCode-desc p{font-size: 13px;padding: 5px 0;text-align: center;}
+.login-area .sms-h span {font-size: 15px;color: #009ae7;cursor: pointer;}
+ .qrCode-content{text-align:center;top:40px;position:relative;margin: 0 auto;}
+.qrCode-help{position:absolute;display:inline-block;background:url("../images/qrcode-help.png");width:130px;height:214px;vertical-align:middle;}
+#qrcodeImg{top:27px;position:absolute;display:inline-block;width:150px;height:150px;z-index:100;vertical-align:middle;padding:5px;border:1px solid #999;background:#fff}
+#qrcodeImg img{height:100%;width:100%}
+.qrcode-over-time{display:none;position:absolute;width:160px;height:160px;top:0;left:0}
+#qrcodeImg .des{text-align:center;color:#FFF;font-size:14px;margin-bottom:10px}
+#qrcodeImg .refush{display:inline-block;color:#fff;font-size:12px;background:#007dff;padding:0 16px;height:25px;line-height:25px;border-radius:16px;cursor:pointer}
+#qrcodeImg .refush-content{position:absolute;width:100%;text-align:center;top:54px;left:0;z-index:10000}
+.scan-success-content{position:absolute;top:54px;left:0;width:100%;text-align:center}
+.scan-success-img{background:url("../images/scan-success.png");width:29px;height:29px;margin: auto;}
+.scan-success {text-align:center;margin-top:10px;font-size:14px;color:#FFF;line-height:1.5}
+ .haweiapp{color:#007dff;}
+.table-p {text-align: center;font-size: 20px;color: #d70506;font-family: "Microsoft YaHei" ! important;border-bottom: 1px solid rgb(205, 205, 205);padding-top: 20px;padding-bottom: 20px;margin-bottom: 10px;}
+.loginTitle-nocode{color:#1aa8d5;font-weight: 500;;font-size:20px;text-align:center}
+.authCodeTd{width: 28px}
+.poptips-yes {display: inline-block;padding: 0;width: 18px;height: 18px;background-size: contain;background-position: 0px 0px;background-image: url(../images/authcoderight.png);background-repeat: no-repeat;}
+
+.geetest_holder.geetest_wind{width: 328px!important;margin-top: 10px;}
+.captchaLoading{width: 326px;margin-top: 10px;min-width: 260px;height: 42px;border: 1px solid #cccccc;line-height: 42px;font-size: 14px;text-align: center;background-image: linear-gradient(180deg, #ffffff 0%,#f3f3f3 100%);}
+.loadImg{background-image: url(../images/captcheloading.gif);background-repeat: no-repeat;background-size: contain;width: 28px;height: 28px;display: inline-block;margin-top: 7px;}
+
+/****小语种样式分离****/
+.website-name{color: white;font-size: 20px;line-height: 50px;font-family: "arial";padding-top: 14px;}
+.main-logo{width: 161px;line-height: 1;}
+.head_center{width:auto;max-width: 998px;}
+.wihteBgPic{margin-top: 17px!important;}
+.adHeadPic{margin-top: 12px!important;}
+.adHeadTitle{color: #333333;font-size: 18px;}
+.HeadTitle{color: #ffffff;font-size: 18px;}
+.website-name span{color: #cccccc}
+
+.thirdLintTitle .line-left{top:50%;}
+.thirdLintTitle .line-right{bottom:50%;}
+.table-style {background-color: #fff;width: 280px;margin-top: 0px;}
+.radio, .checkbox {margin-top: 3px;}
+.form-edit-area .regist {color: #999;}
+.form-edit-area .forgot {color: #999;}
+.form-edit-area .noNeedLoad {color: #333;display: inline-block;}
+.thirdLoginBlock {text-align: center;position: absolute;bottom: 0px;color: #999;line-height: 16px;}
+.tick-on-icon{width: 18px;height: 18px;background-image: url(../images/tick-on.png);background-repeat: no-repeat;background-size: cover;display: inline-block;margin-bottom: -4px;}
+.tick-off-icon{width: 18px;height: 18px;background-image: url(../images/tick-off.png);background-repeat: no-repeat;background-size: cover;display: inline-block;margin-bottom: -4px;}
+.login_adBg{background-size: cover;background-repeat: no-repeat;background-repeat: no-repeat;}
+#layer {position: absolute;top: 0px;}
+.load {z-index: 10;height: 0px;display: none}
+.form-edit-area td .random_padding {max-height: 40px;}
+.smsCodeLoad-block .sms-b .smsRandomCode{color: #1789FF;cursor: pointer;}
+
+
+.changeLoginType{color: #007dff;cursor: pointer;visibility: hidden;}
+.changeLoginType:hover{color:#0064cc;}
+.form-edit-area #operLinkTd .clearWidth{width: auto;}
+.callbackAcctLoginBtn{font-size: 16px;display: inline-block;margin: 20px 26px 46px;}
+.referenceTarget{position: relative;}
+.smsAuthBth{font-size: 14px;color: #007dff;position: absolute;bottom: 0;cursor: pointer;height: 46px;line-height: 46px;background-color: #fff;}
+.form-edit-area #getSmsRandomCodeDiv{position: relative;}
+.smsAuthBth:hover{color:#0064cc;}
+.smsAuthCodeErrorTips{font-size: 12px;color: #ff3320;margin-top: 2px;}
+
+.login-form-marginTop .cleanPostion{position: initial;}
+.marginTop26{margin-top:26px}
+
+.phoneIcon{width:11px;height:15px;background-image: url(../images/ic_smslogin.png);background-repeat: no-repeat;display: inline-block;background-position: -2px 0;margin-bottom:-3px;}
+.smsLogin-errorTips{padding: 0 16px;}
+#remember_name,#remember_smsName{position:absolute;top:-100000px;}
+
+.form-edit-area .btn-primary{color: #007dff}
+.form-edit-area .btn-primary:hover{color: #0064cc;text-decoration: none;}
+.p0{padding: 0 !important;}
+
+.set-more{position: absolute;top: 12px;right: 16px;}
+.set-more .more-list{position: absolute;top: 10px;right: -14px;padding:8px 16px;border-radius: 8px;box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);;background:#fff; }
+.set-more .more-list li{height: 16px;line-height: 16px;font-size: 15px;color: #000; word-break: keep-all;white-space: nowrap; cursor: pointer;}
+.form-edit-area .lb_opacity_Class div{padding:0;margin:0!important;}
+.form-edit-area .error-underline{border-bottom: 1px solid rgba(255,51,32,0.5);}
+.loginErrorInfo{width: 13px;height: 13px;background-image: url(../images/btn_errorinfo.png);background-repeat: no-repeat;background-size: cover;display: inline-block;vertical-align: middle;margin-bottom: 2px;}
+.userAccountLogin-errorTipsDiv,.smsValidateLogin-errorTipsDiv{font-size: 12px;color: #ff3320;line-height: 1.3;min-height: 15px;}
+.loginAndRegLink{color:#007dff;}
+.form-edit-area #rememberNameSpan label,.form-edit-area #sms-rememberNameSpan label{cursor: pointer;}
+
+/**/
+.bubble-tip-content {position: relative;}
+.bubble-tip {position: absolute;overflow: hidden;z-index: 10000;bottom: 10px;}
+.bubble-tip .bubble-tip-left-top {width: 20px;height: 20px;background: url(../images/auth_tips.png);background-position:left top;float: left;}
+.bubble-tip .bubble-tip-right-top {width: 20px;height: 20px;background: url(../images/auth_tips.png);background-position:right top;float: right;}
+.bubble-tip .bubble-tip-top {width: 288px;height: 20px;background: url(../images/tip_top.png);background-position:top center;overflow: hidden;}
+.bubble-tip .bubble-tip-left {width: 20px;height: 80px;background: url(../images/tip_left.png);background-position:left center;float: left;}
+.bubble-tip .bubble-tip-right {width: 20px;height: 80px;background: url(../images/tip_right.png);background-position:right center;float: right;}
+.bubble-tip-center {word-break: break-all;line-height: 1.5;background: #FFF;color: #333;}
+.bubble-tip .bubble-tip-left-bottom {width: 20px;height: 27px;background: url(../images/auth_tips.png);background-position:left bottom;float: left;}
+.bubble-tip .bubble-tip-right-bottom {width: 20px;height: 27px;background: url(../images/auth_tips.png);background-position:right bottom;float: right;}
+.bubble-tip .bubble-tip-underline {width: 214px;height: 27px;background: url(../images/tip_underline.png);background-position:right bottom;float: right;}
+.bubble-tip .bubble-tip-bottomArrow {width: 74px;height: 27px;background: url(../images/tip_bottom.png);background-position:center bottom;overflow: hidden;}
+
+.lineHeightFix{line-height: 1!important;}
+.containCollapseFix{overflow: hidden}

@@ -1,0 +1,60 @@
+﻿/********************************濡�虫健common鐟曞棛娲婇悳顖氼暔common***********************************/
+/*鐠愶箑褰挎穱婵囧Б1*/
+.auth_code_grey .userAccount, .userAccount{color:#333}
+.representation_div{width: 100%;text-align: center!important;color: #007dff;margin: 20px auto;float: none;height: auto;}
+.margin10-EMUI5{margin: 10px auto;}
+.dinput{border-radius: 20px;background-color: #EFEFEF;border:none;margin-top: 10px;line-height: 1.5;position: relative;} /*濠碉拷濞茬粯澧滈張锟�*/
+.dinput input {background-color: #EFEFEF;width: 100%;}
+.dbtn2,.dbtn3{border-radius: 20px;height: 38px;line-height: 38px;font-size: 14px;}
+.dbtn2{border:none;background-color: #EFEFEF;color: #007dff;text-align: left;width: auto;}
+.auth_code_grey span{color: rgba(0,125,255,0.2);}
+.check-box{position: relative;margin-right: 16px;}
+.check-box .check-icon{width:16px;height:16px;cursor: pointer;position: absolute;}
+.ddrop-EMU5 .select-text,.dpmenu-EMU5 li,.a-EMUI5{font-size: 14px;}
+/*濠碉拷濞茬粯澧滈張锟�*/
+.inptips2,.unactivephone {line-height: 1.5}
+/*濠碉拷濞插鍋栫粻锟�*/
+.inptips3{line-height: 1.5;margin-bottom: 0px;}
+.resendBtn{border: none;background-color: #ffffff;color: #007dff;}
+/*妞嬪孩甯舵穱顔芥暭鐎靛棛鐖�*/
+.resetPwd-subtitle{padding: 0 0 20px 0;}
+.dinput-UI5{margin-bottom:0px;}
+.dinput-UI5-tip{margin-bottom: 20px;}
+.normal-tips-EMUI5,.line-EMUI5{margin-bottom: 10px;}
+.margin20-EMUI5{margin-bottom: 20px;}
+/*鐟曞棛娲� 鐠恒劎鐝崥灞惧壈閸楀繗顔呮稉濠佺瑓闂傜绐�*/
+.global_dialog_confirm_main .textArea{padding: 30px 16px 20px 16px;}
+.global_dialog_confirm_main .textArea div,.global_dialog_confirm_main_fullScreen .textArea div{font-size: 14px;line-height: 1.5;text-align: left;}
+.btn-EMUI5-2{font-size: 14px;}
+/*鐠恒劎鐝惂璇茬秿妞ょ敻娼扮捄瀹犳祮*/
+.font-EMUI6{font-size: 14px;line-height: 1.5;}
+/*闁瀚ㄧ敮鎰娇閻ㄥ嫬鑴婂锟�*/
+.ron{background: url(../images/btn_ron.png) no-repeat;background-position: 0px 0px;background-size: contain;}
+.roff{background: url(../images/btn_roff.png) no-repeat;background-position: 0px 0px;background-size: contain;}
+
+/*瀵湱鐛ラ幐澶愭尦*/
+.global_dialog_confirm_sub, .global_dialog_confirm_nor, .global_dialog_alert_okey{font-size: 14px}
+/*.dinput input::-webkit-input-placeholder { color:#cccccc;font-size:14px}
+.dinput input:-moz-placeholder {color:#cccccc;font-size:14px}
+.dinput input::-moz-placeholder {color:#cccccc;font-size:14px}
+.dinput input:-ms-input-placeholder {color:#cccccc;font-size:14px;}*/
+::-webkit-input-placeholder {color:#cccccc;font-size:14px}  
+:-moz-placeholder {color:#cccccc;font-size:14px}  
+::-moz-placeholder {color:#cccccc;font-size:14px}  
+:-ms-input-placeholder {color:#cccccc;font-size:14px}  
+.lb_opacity_Class{padding-top: 0px!important;}
+.lb_opacity_Class div{padding-top: 10px;}
+
+.error-tips-EMUI5{margin-top: 4px;}
+.input-error-EMUI5{border: 1px solid rgba(255,51,32,0.5);}
+.login-error-tips-EMUI5,.rancode-error-tips-EMUI5{font-size: 12px;color: #ff3320;margin-top: 2px;}
+.rancode-error-tips-EMUI5{margin-top: 4px;position: absolute;}
+.loading-error-tips-EMUI5{font-size: 12px;color: #ff3320;margin-top: 2px;padding: 0 16px;}
+
+.ifmDialogCss{width: 350px;position: absolute;left: 50%;top: 40%;margin:0;margin-left: -175px;}
+.emailValidFail{padding: 0px;line-height: 1.5;}
+
+.sbtn {margin-top: 0px;position: absolute;top: 0;right: 0;margin-right: 15px;}
+.cas_error{color: #333;font-size: 14px;}
+.a-EMUI5 .userAccount{color:#007dff}
+.dialog-line.dialog-line-disabled a .userAccount{color: rgba(0, 0, 0, 0.2);}

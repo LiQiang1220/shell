@@ -1,0 +1,666 @@
+﻿@charset "utf-8";
+/* reset */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{margin: 0;padding: 0;line-height:1;}
+/*页面头部华为白色logo+华为商城样式start*/
+input::-ms-clear{display:none;}
+.head-background{background-color: #333333;height: 67px;min-width:960px}
+.head_center {width:960px;height:67px;margin:0px auto;border:0px;position:relative}
+.head_center .main-logo {left:2px;float: left;}
+.head_center .main-logo img{margin-left:4px;margin-top:12px;}
+.head_center img{margin-left:4px;margin-top:12px;}
+.head_center .main-logo{position:static;}
+.website-name {color: white;font-size: 20px;height: 67px;line-height: 50px;font-family: "arial";padding-top: 8px;}
+.adHeadPicContainer {margin-right: 20px;}
+/*页面头部华为白色logo+华为商城样式end*/
+img{border:0;-ms-interpolation-mode:bicubic;}
+table{border-collapse: collapse;border-spacing: 0;}
+button,select{text-transform: none;}
+button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}
+textarea {overflow: auto;vertical-align: top; resize:vertical;}
+ol,ul{list-style:none;}
+em{font-weight:normal;font-style:normal;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+h1,h2,h3,h4       ,h5,h6,b{font-size:100%;font-weight:normal;}
+td{word-break:break-all;word-wrap:break-word;word-break: normal;}
+/* reset end */
+
+html{font-size: 100%;-webkit-text-size-adjust:100%;overflow-y:scroll;}
+body{font-size:12px;font-family:Microsoft Yahei,STHeiti,Simsun,STSong; color:#333; background-color:#f2f2f2;}
+a{text-decoration:none;color:#b7b7b7;}
+a:focus, a:active, a:hover, input{outline:0;}
+
+.r{float: right;}
+.l{float: left;}
+.clearFix:after
+{
+	clear:both;
+	content:" ";
+	visibility:hidden;
+	display:block
+}
+.clearFix
+{
+	*zoom:1;
+}
+.color33{
+	color: #333!important;
+}
+.color66{
+	color: #666!important;
+}
+.agrLineH {
+    line-height: 150%;
+}
+.paddingTop18 {
+    padding-top: 18px;
+}
+.paddLeft10
+{
+	padding-left: 10px;
+}
+.errorColor
+{
+	color: #ff3320;
+} 
+.marginTop2{
+	margin-top: 2px;
+} 
+.marginTop8{
+	margin-top: 8px;
+}
+.marginTop10{
+	margin-top: 10px;
+}
+.marginButtom20{
+	margin-bottom: 20px;
+}
+/* footer */
+.ft{ 
+	margin:30px auto; 
+	text-align: center; 
+	font-size: 12px; 
+	color: #999;
+}
+.ft p{
+	line-height: 24px;
+    margin: 0 auto;
+    font-size: 10px;
+} 
+.ft p a {
+	font-size:14px; color:#999;
+}
+.rule{
+	padding:0 10px;	
+}
+.ifaq{
+	padding:10px; 
+	background-position:-100px 3px;
+}
+.reg-content{
+	margin:0px auto;
+	width:960px;
+}
+.ft .reg-content{
+	margin-top:30px;
+	 margin-bottom:30px; 
+	 text-align:center;
+	}
+
+/* footer end*/
+
+/*以前页面里面的样式*/
+.countryDialog {
+  max-height:400px;
+  overflow:auto;
+  padding:62px,0px;
+  width:484px;
+  background-color: #fff;
+  box-shadow: 0 1px 7px #afadae;
+  z-index: 10005;
+}
+.dcent2 {
+ margin:40px 63px;
+}
+.selected {
+    padding: 10px;
+    cursor: pointer;
+    background-image: url("../images/1c79e32145a845e4a16f6421538264c8.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+}
+.normal-tips {
+	font-size: 14px;
+    color: #333;
+}
+.gray-tips-EMUI5
+{
+	padding: 0px;
+}
+.pwd-low-div {width: 33%;background: #ff3320;}
+.pwd-strong-div {width: 100%;background: #41ce48;}
+#msg_password {
+    display: block;
+    color: #ff3320;
+}
+
+/* 主题相关 */
+
+.themeName-blue .phone-wrap.sel,.themeName-blue .mail-wrap.sel{
+  background: #1aa8d5;
+
+}
+.themeName-red .phone-wrap.sel,.themeName-red .mail-wrap.sel{
+  background: #B40707;
+}
+.themeName-huawei .phone-wrap.sel,.themeName-huawei .mail-wrap.sel{
+  background: #be0000;
+}
+.themeName-blue .reg-btn .btn.sel {
+    background-color: #1aa8d5;
+    border: none;
+    color: #fff;
+}
+.themeName-red .reg-btn .btn.sel {
+    background-color:#B40707;
+    border: none;
+    color: #fff;
+}
+
+.themeName-red .reg-btn .btn.sel:hover {
+	background-color: #C70000;
+    border-color: #C70000;
+}
+.themeName-huawei .reg-btn .btn.sel:hover {
+    border-color: #be0000;
+    background: #be0000;
+    color: #fff;
+}
+/*针对cdialog样式的重新写*/
+.normal-tips-EMUI5 {
+    padding: 0;
+}
+.line8-EMUI5 {
+    margin: 8px 0;
+}
+#chooseCountry .ddrop-EMU5 .select-text {
+    font-size: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    padding:0 16px;
+}
+#chooseCountry .select-ico
+{
+	position:absolute;
+	top:17px;
+}
+#chooseCountry .dpmenu-EMUI5-down {
+    top: 36px;
+   
+}
+#chooseCountry .uc-line {
+	width: 328px!important;
+    padding-left:16px;
+}
+#input_languageCode.ddrop-EMU5 .select-text {
+    font-size: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lb_opacity_Class{
+	padding-top: 6px!important;
+}
+/*针对cdialog样式的重新写*/
+
+/* 发送更改透明度*/
+.send-ajax
+{
+	opacity: 0.8 !important;
+	filter:Alpha(opacity=80);
+}
+
+.wp1 {
+    width: 100%;
+    margin: 0px auto;
+    background: #f2f2f2;
+}
+.relative {
+    position: relative;
+}
+.register-content {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 960px;
+}
+.phone-wrap, .mail-wrap
+{
+	display: inline-block;
+	position: relative;
+    background: #ccc;
+    margin-right: 12px;
+}
+.phone-icon{
+	display: inline-block;
+	position: absolute;
+	top: 6px;
+	left: 26px;
+	width: 14px;
+	height: 22px;
+	background: url("../images/reg-img01.png") no-repeat;
+	background-position: 0 -18px; 
+}
+.mail-icon{
+	display: inline-block;
+	position: absolute;
+	top: 9px;
+	left: 16px;
+	width: 22px;
+	height: 17px;
+	background: url("../images/reg-img01.png") no-repeat;
+	background-position: 0 0px; 
+}
+
+.reg-tab .tab-email, .reg-tab .tab-phone{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.login {
+    margin-top: -25px;
+    font-size: 14px;
+}
+.login-a,.ar-eg-opposite{
+	color: #007dff;
+}
+.login-a:hover{
+	color: #0064cc;
+}
+
+.reg-detail{
+	padding: 30px 270px;
+	font-size: 14px;
+	color: #333;
+	background: #fff;
+}
+.complete-title{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	font-size: 24px;
+	font-weight: normal;
+	color: #333;
+	background: #fff;
+	text-align: center;
+	border-bottom: 2px solid #f7f7f7;
+	
+}
+.complete-detail{
+	padding: 20px 270px 40px;
+}
+/*.reg-detail input[type=text],.reg-detail input[type=password]{
+	width: 100%;
+	padding-top: 7px;
+	border:none;
+	background: #f7f7f7;
+}*/
+/*
+.reg-detail input.pwd-input
+{
+	width: 86%;
+	padding-top: 7px;
+	border:none;
+	background: #f7f7f7;
+}*/
+.node-input{
+	width: 100%;
+	height: 44px;
+}
+.text{
+	height: 28px;
+	line-height: 28px;
+	 font-size: 14px;
+	 padding:0 16px;
+}
+.vam {
+    vertical-align: middle;
+}
+.input-phone,.input-msgcode,.input-password,.input-confirmpwd,.inputcode,.inputParentPwd
+{
+	margin-top: 10px;
+}
+.input-imgcode{
+	margin-top: 30px;
+}
+
+.reg-input{
+	width: 388px;
+    height: 42px;
+    padding: 0 16px;
+	border:1px solid #f7f7f7;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	background: #f7f7f7;
+}
+ .input-error-EMUI5
+{
+border:1px solid rgba(255,51,32,0.5) !important;  	
+}
+.error-tips-EMUI5 {
+   
+    margin-top: 4px;
+}
+.code-input{
+	width: 260px;
+	padding: 0 16px;
+	height: 42px;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	background: #f7f7f7;
+}
+.reg-input2{
+	width: 100%;
+	height: 42px;
+}
+.code-img{
+	width: 100px;
+    height: 44px;
+    cursor: pointer;
+}
+.code-pass{
+	padding: 13px 0px 0px 8px;
+    width: 18px;
+    height: 18px;
+}
+.poptips-yes{
+	display: inline-block;
+	width: 18px;
+    height: 18px;
+	background-image: url("../images/code-success.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	position:absolute;
+	right:-36px;
+	top:11px;
+}
+.choose-country,.input-phone{
+	position: relative;
+}
+.selectedCountry_style{
+	position: absolute;
+	right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.selectPhoneCode
+{
+	position: absolute;
+    right: 14px;
+    top: 8px;
+    cursor: pointer;
+}
+.choose-phonecode{
+	position: relative;
+	width: 24%;
+	padding-top: 8px;
+    font-size: 14px;
+}
+.phone-detail{
+	position: relative;
+	width: 76%;
+	height: 44px;
+}
+.msgcode-detail {
+	display: inline-block;
+	width: 260px;
+}
+.get-code{
+	display: inline-block;
+    margin-top: 11px;
+    background: #f7f7f7;
+    border: none;
+    color: #007dff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.pwd-info{
+	margin-top: 16px;
+	padding:0 16px;
+}
+.gray-tips .pwd-stro{
+	width: 100%;
+	height: 4px;
+}
+.reg-check{
+	display: inline-block;
+	width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 3px;
+}
+.reg-select{
+	display: inline-block;
+    border: none;
+    width: 18px;
+	height: 18px;
+	background: url(../images/reg-check.png) no-repeat;
+	margin-top: 3px;
+}
+.tip-detail{
+	vertical-align: top;
+    margin-left: 10px;
+}
+
+.input-birthday{
+	 margin-bottom: 18px;
+}
+.birthday-choose{
+	display: inline-block;
+	padding-bottom: 12px;
+}
+.birthday-text{
+	display: inline-block;
+	padding-top: 6px;
+	padding-bottom: 12px;
+	padding-right: 16px;
+}
+.loginAndRegLink,.websettingurl
+{
+	color:#007dff;
+}
+.loginAndRegLink:hover,.websettingurl:hover
+{
+	color:#0064cc;
+}
+.reg-btn{
+	margin-top:30px;
+	text-align: center;
+}
+.btn{
+	width: 200px;
+	height: 40px;
+	border:1px solid #ccc;
+	border-radius: 20px;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	background: #fff;
+	cursor: pointer;
+}
+
+.box-shadow {
+    padding-top: 40px;
+    border-bottom: 1px solid #d7d7d7;
+    text-align: center;
+    background: #f2f2f2;
+}
+/*儿童帐号注册开始*/
+.reg-child {
+    text-align: center;
+}
+.reg-title {
+    font-size: 24px;
+    color: #000;
+    font-family: "Microsoft Yahei" ! important;
+}
+.box-shadow-in {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+.node {
+    margin-top: 27px;
+}
+.guardian-info{
+	margin-top:18px;
+	margin-bottom:30px;
+}
+.marginBtm20{margin-bottom:20px;}
+.auth_code_grey {
+    color: #d6e2f9;
+    cursor: auto;
+}
+div.adCheckBoxPart{display:none;}
+.agreement{padding:0 16px;}
+
+.birthday_line{background:#efefef;height:1px;margin:16px 0px;}
+.code-img img{height:42px;} 
+.dataCollect{line-height: 1.5;margin-bottom: 20px;}
+
+.code-img img
+{
+ height:42px;
+} 
+.input-container
+{
+	margin-top:10px;
+	background:#f7f7f7;
+	height:42px;
+	border:1px solid #d9d9d9;
+	border-radius:21px;
+	position:relative;
+}
+.input-container .input-left
+{
+
+	height:100%;
+	border-right:1px solid #d9d9d9;
+	padding: 0 16px;
+	line-height:42px;
+
+}
+.input-container .input-left li
+{
+	text-align:left;
+}
+.input-container .input-left:after {
+            content: '';
+            width: 100%;
+            display: inline-block;
+        }
+.input-container .input-right
+{
+	height:100%;
+	padding-right:16px;
+	line-height:42px;
+	*width:100px;
+}
+.input-container .input-content
+{
+	height:100%;
+	overflow:hidden;
+}
+#chooseCountry .input-content
+{
+	height:100%;
+	overflow:visible;
+}
+#chooseCountry .input-content .ddrop-EMU5
+{
+	display:block;
+}
+.input-container .input-content input
+{
+	height:100%;
+	width:100%;
+	border:0px;
+	padding:0 16px;
+	background:transparent;
+	*height:40px;
+	*line-height:40px;
+}
+.input-content.birthDateContent
+{
+	padding:0 16px;
+	overflow:visible;
+}
+
+.birthDateContent .birthday-choose
+{
+	margin-top:10px;
+}
+.input-container .input-left .ddrop-EMU5 {
+   
+    display: block;   
+    height: 42px;
+    line-height: 42px;
+}
+#pwdDiv,#randomCodeDiv
+{
+	margin-top:30px;
+}
+#randomCodeImg
+{
+	cursor:pointer;
+}
+.adContentPart
+{
+	overflow: hidden;
+}
+.set-password {
+    margin: 30px 0;
+}
+
+/*儿童注册行内样式抽取*/
+.hidden{display:none;}
+.userCenter-regByEmail #registerForm .visib-hidden,.userCenter-regByPhone #registerForm .visib-hidden{visibility: hidden;}
+.userCenter-regByEmail #registerForm .height33{height:33px}
+.userCenter-regByEmail #registerForm .paddingTop22,.userCenter-regByPhone #registerForm .paddingTop22{padding-top:22px;}
+.userCenter-regByEmail #registerForm .getSMSAuthCode,.userCenter-regByPhone #registerForm .getSMSAuthCode{position:relative;top:34px;}
+.userCenter-regByEmail #registerForm .authCode-text,.userCenter-regByPhone #registerForm .authCode-text{vertical-align: middle;}
+.userCenter-regByEmail #registerForm .padding0,.userCenter-regByPhone #registerForm .padding0{padding:0px;}
+.userCenter-regByEmail #registerForm .marginTop16{margin-top: 16px;}
+.userCenter-regByEmail #registerForm .height3{height: 3px;}
+.userCenter-regByEmail #registerForm .passWordTips,.userCenter-regByPhone #registerForm .passWordTips{color:#666;}
+.userCenter-regByEmail #registerForm .padding016,.userCenter-regByPhone #registerForm .padding016{padding:0 16px;}
+.userCenter-regByEmail #registerForm .guardian-notice,.userCenter-regByPhone #registerForm .guardian-notice{padding:0 16px;line-height:1.5;}
+.userCenter-regByEmail #registerForm .regErrorMsg,.userCenter-regByPhone #registerForm .regErrorMsg{position:relative;left:30%;}
+.select-ico{
+	*position:absolute;
+	*right:0px;
+	*top:50%;
+	*margin-top:-3px;
+}
+.pwd-info-indialog{padding: 0 16px;}
+.secPhoneCodeShowCss{font-size: 15px;vertical-align: middle;display: inline-block;width: 90px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.chkAuthCodeSuccess{color:rgb(204, 204, 204);}
+.input-birthday
+{
+	margin-top:30px;
+}
+.regist-des{margin-top:8px;font-size:13px;padding:0 8px;}

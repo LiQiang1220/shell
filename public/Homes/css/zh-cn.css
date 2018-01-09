@@ -1,0 +1,38 @@
+﻿@charset "utf-8"; 
+body {height:100%;width:100%;_position: relative;}
+body,button,input,select,textarea {font: 12px/1.5 Arial, Helvetica, sans-serif;}
+
+.main-logo{padding-left:0px;float: left;}
+.adHeadPicContainer{margin-right: 20px;}
+.adHeadLine{margin-right: 14px!important;}
+
+.thirdLintTitle .line-left{left:0;}
+.thirdLintTitle .line-right{right: 0;}
+.login-area .h .splitLine,.login-div .h .splitLine {border-left: 1px solid #cccccc;}
+.table-style {margin-left: auto;margin-right: auto;}
+.radio, .checkbox {margin-right: 5px;}
+.form-edit-area .regist {padding-right: 10px;border-right: 1px solid #cccccc;text-align: right;}
+.form-edit-area .forgot {padding-left: 10px;text-align: left;}
+.form-edit-area .noNeedLoad {float: right;}
+.login-tips {margin-left: auto;margin-right: auto;}
+label.vam{margin-left: 20px;}
+.tick-on-icon{left: 0px;}
+.tick-off-icon{left: 0px;}
+.login_content_bg{float: left;}
+#remeberTip {margin-left: -13px;}
+#layer {left: -10000px;}
+.load {margin-left: 10px;}
+.smsCodeLoad-block .sms-b .smsRandomCode{margin-left: 20px;}
+#qrcodeImg{left:87px;}
+.qrCode-help{right:19px;} 
+.sbtn {margin-top: 0px;position: absolute;top: 0;right: 0;margin-right: 15px;}
+
+.smsAuthBth{right: 0;}
+
+.paddingleft5{padding-left: 5px}
+
+.marginR6{margin-right: 6px}
+
+.bubble-tip .bubble-tip-underline{float: right;}
+
+#remember_name,#remember_smsName{left:-10000px}
