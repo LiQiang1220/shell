@@ -13,22 +13,31 @@
  
  // 路由不可以使用admin和home，要用加s
 Route::get('/',function(){
-	return '<center ><h1>欢迎访问首页</h1></center>';
+	return view('welcome');
 });
 
 // 后台的路由
 
 // 前台油路开始
-Route::group(['prefix'=>'homes'],function(){
+Route::group(['prefix'=>'Homes'],function(){
 
 	// 用户模块 
-	Route::controller('/user','homes\UserController');
-
+	Route::controller('/user','Homes\UserController');
+					// ['create'=>'User.register']
 	// 商品模块
-	Route::controller('/goods','homes\GoodsController');
+	Route::resource('/goods','Homes\GoodsController');
+	//验证模块
+
+	//前台登录
+	Route::controller('/login', 'Homes\LoginController');	
+	Route::post('dologin','Homes\LoginController@dologin');
+	
+	//前台注册
+	Route::controller('/register','Homes\RegisterController');
+	Route::post('doregister','Homes\RegisterController@doregister');
 
 });
-
+Route::get('kit/captcha/{tmp}', 'KitController@captcha');
 //后台路由组
 Route::group(['prefix'=>'admins'],function(){
 

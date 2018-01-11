@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Homes;
 
 use Illuminate\Http\Request;
-
+use Flc\Dysms\Client;
+use Flc\Dysms\Request\SendSms;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Model\goods;
+use App\Model\user;
 
 class UserController extends Controller
 {
@@ -15,17 +16,9 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function getLogin()
+    public function index()
     {
-        //
-       return view('Homes.user.login');
-    }
 
-    public function getRegister(){
-        $res = goods::get();
-        dd($res);
-        return view('Homes.user.register');
     }
     
-        
 }
