@@ -3,25 +3,20 @@
 /*
 |--------------------------------------------------------------------------
 | Application Routes
-<<<<<<< HEAD
-|----------`----------------------------------------------------------------
-=======
 |--------------------------------------------------------------------------
->>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
 |
 | Here is where you can register all of the routes for an application.
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
 */
- 
-<<<<<<< HEAD
+
  // 路由不可以使用admin和home，要用加s
 Route::get('/',function(){
 	return view('welcome');
 });
 
-// 后台的路由
+
 
 // 前台油路开始
 Route::group(['prefix'=>'Homes'],function(){
@@ -47,13 +42,9 @@ Route::get('/changepass','Homes\LoginController@changepass');
 //验证码
 Route::get('kit/captcha/{tmp}', 'KitController@captcha');
 Route::post('/phonecaptcha','Homes\RegisterController@phonecaptcha');
-//后台路由组
-Route::group(['prefix'=>'admin'],function(){
 
 	
-=======
  
-
 
 
 // 后台登录
@@ -115,6 +106,4 @@ Route::group(['prefix'=>'/admin','middleware'=>'login'],function(){
 	//轮播图
 	Route::resource('/lunbo','Admins\LunboController');
 
-
->>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
 });

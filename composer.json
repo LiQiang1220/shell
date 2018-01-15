@@ -7,15 +7,11 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-<<<<<<< HEAD
         "flc/dysms": "^1.0",
         "gregwar/image": "^2.0",
         "gregwar/captcha": "^1.1",
         "zgldh/qiniu-laravel-storage": "^0.9.0"
-=======
-        "zgldh/qiniu-laravel-storage": "^0.9.0",
-        "flc/alidayu": "^2.0"
->>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
