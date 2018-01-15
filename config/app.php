@@ -144,10 +144,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-<<<<<<< HEAD
-=======
-        zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
->>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
+
 
     ],
 

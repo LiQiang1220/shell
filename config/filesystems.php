@@ -80,9 +80,7 @@ return [
             'url_type'  => 'publicURL',
         ],
 
-<<<<<<< HEAD
-=======
-        
+
        'qiniu' => [ 
             'driver'  => 'qiniu', 
             'domains' => [ 
@@ -97,8 +95,6 @@ return [
             'access'    => 'public'  //空间访问控制 public 或 private 
         ], 
 
-
->>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
     ],
 
 ];

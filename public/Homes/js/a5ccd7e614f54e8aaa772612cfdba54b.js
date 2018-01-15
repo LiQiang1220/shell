@@ -1,1 +1,0 @@
-ec.pkg("ec.account");

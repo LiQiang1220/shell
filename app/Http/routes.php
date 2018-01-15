@@ -14,6 +14,7 @@
  // 路由不可以使用admin和home，要用加s
 Route::get('/',function(){
 	return view('welcome');
+	// echo "123";
 });
 
 
