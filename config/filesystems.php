@@ -80,6 +80,25 @@ return [
             'url_type'  => 'publicURL',
         ],
 
+<<<<<<< HEAD
+=======
+        
+       'qiniu' => [ 
+            'driver'  => 'qiniu', 
+            'domains' => [ 
+                'default'   => '7xqia0.com1.z0.glb.clouddn.com', //你的七牛域名 
+                'https'     => 'dn-yourdomain.qbox.me',         //你的HTTPS域名 
+                'custom'    => 'static.abc.com',                //Useless 没啥用，请直接使用上面的 default 项 
+             ], 
+            'access_key'=> '2Dtvc2MVJaM60fh1jcXSUslyL3uS92Boh2mVTzE9',  //AccessKey 
+            'secret_key'=> 'QyDRTyOHDuGVs9fG1_GO8h650JHkzItSiWkbCHQk',  //SecretKey 
+            'bucket'    => 'lxf-php',  //Bucket名字 
+            'notify_url'=> '',  //持久化处理回调地址 
+            'access'    => 'public'  //空间访问控制 public 或 private 
+        ], 
+
+
+>>>>>>> 0a21419c72fa2261a5e71228c8b21376a7e1fc4d
     ],
 
 ];
