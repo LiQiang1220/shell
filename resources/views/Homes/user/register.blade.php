@@ -79,8 +79,6 @@
 
 
 				<!--手机号码 -->
-				<form action="/Homes/doregister" method="post">
-				{{ csrf_field()}}
 				<div class="input-container" id="phoneInputDiv-box">
 					<div class="l input-left">
 					 <input id="countryCode" type="hidden" name="" autocomplete="off" >
@@ -99,13 +97,13 @@
 
 
 			
-			<div class="input-container" id="randomCodeDiv">
+			<!-- <div class="input-container" id="randomCodeDiv">
 					<div class="l input-left">
 						图形验证码
 					</div>
 
 					<div class="r input-right">
-						<img style="height: 40px" src="http://www.qwe.com/kit/captcha/0.5273840518459909"
+						<img style="height: 40px" src="/kit/captcha/1"
 						alt="验证码" title="刷新图片" width="100" height="40" 
 						id="c2c98f0de5a04167a9e427d883690ff6" border="0"
 							onclick="javascript:re_captcha();"> 
@@ -116,7 +114,7 @@
 							name="formBean.randomCode" autocomplete="off">
 					</div>
 
-				</div>
+				</div> -->
 				
 				<div id="randomCode_msg"></div>
 
@@ -126,15 +124,15 @@
 						短信验证码
 					</div>
 					<div class="r input-right">
-						<input type="button" class="get-code dbtn2" autocomplete="off"
-							id="getValiCode" IntervalTime="60"
-							onclick="getMobileCode(4,'p_reg_phone_session_ramdom_code_key',26,'zh')"
+						<input type="button" class="get-code dbtn2" 
+							id="getValiCode"  
 							value="获取验证码" /> <span
 							id="msg_getPhoneRandomCode"
 							style="position: relative; top: 34px;"></span>
 					</div>
 					<div class="input-content">
 						<input placeholder='请输入短信验证码' type="text" autocomplete="off"
+					
 							class="verify vam ime-disabled text" id="authCode" tabindex="3"
 							style="vertical-align: middle;" name="formBean.authCode"
 							maxlength="8" tabindex="3" />
@@ -174,7 +172,7 @@
 
 
 				<div class="reg-btn" align="center">
-					<input type="submit" class="btn btn-reg sel" id="btnSubmit"
+					<input type="button" class="btn btn-reg sel" id="btnSubmit"
 						value="注册" tabindex="7" />
 					<div id="register_msg" style="position: relative; left: 26%;"></div>
 				</div>
@@ -241,20 +239,23 @@
 		<script src="/homes/js/registerbyphone.js"></script>
 		<script src="/homes/js/swfobject.js"></script>
 		<script src="/homes/js/acctguard-secure.min.js"></script>
+		<script type="text/javascript" src="/layer/layer.js"></script>
+
 	<script>
-	arr = ['2','2','2'];
+	// alert('2133');
+	// layer.alert('123');
+	arr = [1,1,1];
 	//手机号js验证
 	$('#username').blur(function(){
 		if ($('#username').val() == "") {
 		$("#msg_phone").html("<font color='red'>手机号码不能为空！</font>");
-		arr.splice(0,1,"1")		
+		arr.splice(0,1,1);		
 		}else if(!(/^[1][3,4,5,7,8,9][0-9]{9}$/.test($('#username').val()))){ 
-		$("#msg_phone").html("<font color='red'>手机号码格式不正确！请重新输入！</font>");
-		
-		arr.splice(0,1,"1")	
+		$("#msg_phone").html("<font color='red'>手机号码格式不正确！请重新输入！</font>");		
+		arr.splice(0,1,1);	
 		}else{
 		$("#msg_phone").html("");
-		arr.splice(0,1,"0")	
+		arr.splice(0,1,0);
 	
 		}
 		 
@@ -264,63 +265,105 @@
 			regExp=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,21}$/;
     		if($('#password').val()==""){
 			$("#msg_password").html("<font color='red'>密码不能为空!</font>");	
-			arr.splice(1,1,"1")	
+			arr.splice(1,1,1)	
 					
    			 }
 			if(!regExp.test($('#password').val())){
 			$("#msg_password").html("<font color='red'>密码格式错误！请重新输入！</font>");	
-			arr.splice(1,1,"1")	
+			arr.splice(1,1,1)	
 		
     		}else{
 			$("#msg_password").html("");	
-			arr.splice(1,1,"0")	
+			arr.splice(1,1,0)	
 				
 			}
 		});
 		$('#confirmPwd').blur(function(){
 			if($('#password').val() !== $('#confirmPwd').val()){
-				// $("#msg_checkPassword").text("密码不一致");
 			$("#msg_checkPassword").html("<font color='red'>密码不一致！请重新输入！</font>");	
-			arr.splice(2,1,"1")	
+			arr.splice(2,1,1)	
 					
 			}else{
 			$("#msg_checkPassword").html("");			
-			arr.splice(2,1,"0")	
+			arr.splice(2,1,0)	
 			}
 		});
 		//验证码验证
-		function re_captcha() {
-			$url = "{{ URL('kit/captcha') }}";
-				$url = $url + "/" + Math.random();
-				document.getElementById('c2c98f0de5a04167a9e427d883690ff6').src=$url;
-		}
+		// function re_captcha() {
+		// 	$url = "{{ URL('kit/captcha') }}";
+		// 		$url = $url + "/" + (Math.ceil(Math.random()*1000));
+		// 		document.getElementById('c2c98f0de5a04167a9e427d883690ff6').src=$url;
+		// }
 		//短信验证
-		
-
+			
+		$('#getValiCode').click(function(){
+			// alert(arr);
+			// alert(arr.slice(0,1));
+			if(arr.slice(0,1) == 0){
+				// alert('1');
+			phone = $('#username').val();
+			$.post('/phonecaptcha',{phone:phone,'_token':'{{csrf_token()}}'},
+			function(){
+				layer.alert('验证码发送成功');
+				// alert(arr);
+				 countdown = 120;
+				 setInterval(function time(){
+					if(countdown == 0){
+						$('#getValiCode').attr('disabled',false);
+						$('#getValiCode').val("获取验证码");
+						clearInterval();
+					}else{
+						$('#getValiCode').attr('disabled',true);
+						$('#getValiCode').val("重新发送(" + countdown +")");
+						countdown--;
+					}
+				},1000);
+			})}else if($('#username').val()==""){
+			$("#msg_phone").html("<font color='red'>手机号码不能为空！</font>");						
+			}else{
+			$("#msg_phone").html("<font color='red'>手机号码格式不正确！请重新输入！</font>");		
+				
+			}
+			// }else if ($('#username').val() == "") {
+			// 	alert('2');
+			// 	$("#msg_phone").html("<font color='red'>手机号码不能为空！</font>");
+				
+		// 	}else(!(/^[1][3,4,5,7,8,9][0-9]{9}$/.test($('#username').val()))){ 
+					// alert('3');
+		// 	$("#msg_phone").html("<font color='red'>手机号码格式不正确！请重新输入！</font>");		
+			
+		// }
+		})
 		//不提交进行返回
 		$('#btnSubmit').click(function(){
-			
-			// alert(arr);
-			// alert(arr.indexOf('2'));
-			
-			if(arr.indexOf("2") != '-1'){
-				alert('请填入信息');
-				return false;
-			}else{
-				alert('请修改信息');
-				return false;
-			}
-			 if(arr == ['0','0','0']){
-				alert('注册成功');
-			}
-			// if(arr == ['0','0','0']){
-			// 	alert('注册成功');
-			// }else {
-			// 	alert('请填入信息');
-			// 	return false;
-			// }
+			// layer.alert(arr);
+			// alert('123');
+			// alert(arr.indexOf(1));
+			phone = $('#username').val();
+			password = $('#password').val();
+			code = $('#authCode').val();
+					if(arr.indexOf(1) == -1){
+							$.post('/Homes/doregister',{phone:phone,password:password,code:code,'_token':'{{csrf_token()}}'},function(msg){
+								if(msg == 1){
+									layer.confirm('该手机已注册，是否去登陆？', {
+            						  btn: ['确定','取消'] 
+            							},function(){
+										window.location.href = '/Homes/login/login';
+										})
+								}else if(msg == 3){
+									layer.alert('验证码输入有误，请重新输入！');
+								}else{
+									layer.alert('恭喜你，注册成功！',function(){
+										window.location.href = '/Homes/login/login';
+									})}
+							})
+					}else{
+					 layer.alert('请填入信息');
+					 return false;
+					}
+			});
 
-		})
+		
 		
 	</script>
 </body>

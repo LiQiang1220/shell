@@ -9,7 +9,8 @@
         "laravel/framework": "5.1.*",
         "flc/dysms": "^1.0",
         "gregwar/image": "^2.0",
-        "gregwar/captcha": "^1.1"
+        "gregwar/captcha": "^1.1",
+        "zgldh/qiniu-laravel-storage": "^0.9.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

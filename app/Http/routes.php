@@ -30,16 +30,20 @@ Route::group(['prefix'=>'Homes'],function(){
 
 	//前台登录
 	Route::controller('/login', 'Homes\LoginController');	
-	Route::post('dologin','Homes\LoginController@dologin');
+	Route::post('/dologin','Homes\LoginController@dologin');
 	
 	//前台注册
 	Route::controller('/register','Homes\RegisterController');
-	Route::post('doregister','Homes\RegisterController@doregister');
-
+	Route::post('/doregister','Homes\RegisterController@doregister');
+	
 });
+//前台改密
+Route::get('/changepass','Homes\LoginController@changepass');
+//验证码
 Route::get('kit/captcha/{tmp}', 'KitController@captcha');
+Route::post('/phonecaptcha','Homes\RegisterController@phonecaptcha');
 //后台路由组
-Route::group(['prefix'=>'admins'],function(){
+Route::group(['prefix'=>'admin'],function(){
 
 	
 });
